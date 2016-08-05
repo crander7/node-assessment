@@ -5,7 +5,7 @@ import Faker from 'faker';
 import users from './users.json';
 
 test('Get all users', async t=> {
-  t.plan(2)
+  t.plan(3)
   const res = await request(app)
     .get('/api/users')
     .expect(200)
